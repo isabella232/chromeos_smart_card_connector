@@ -1,5 +1,5 @@
 /** @license
- * Copyright 2018 Google Inc. All Rights Reserved.
+ * Copyright 2019 Google Inc. All Rights Reserved.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -53,7 +53,7 @@ var FAKE_KNOWN_CLIENT_APPS = {
  * @param {!goog.testing.PropertyReplacer} propertyReplacer
  */
 function setUpXhrioMock(propertyReplacer) {
-  propertyReplacer.setPath('goog.net.XhrIo', goog.testing.net.XhrIo);
+  propertyReplacer.setPath('goog.net.XhrIo.send', goog.testing.net.XhrIo.send);
 }
 
 /**
